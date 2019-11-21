@@ -1,2 +1,4 @@
 # DuelEx1
-Game for NordHack
+Имя проекта - DuelEx1
+Название команды - NullyTeam
+
