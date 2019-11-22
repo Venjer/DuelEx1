@@ -5,9 +5,10 @@ using UnityEngine;
 public class Var : MonoBehaviour
 {
     public static int mode;
+    public static string winner;
     private void Start()
     {
-        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Var"));
+        DontDestroyOnLoad(GameObject.Find("Var"));
     }
 }
 

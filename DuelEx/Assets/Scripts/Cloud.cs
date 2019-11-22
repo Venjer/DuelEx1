@@ -9,16 +9,20 @@ public class Cloud : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        obj.transform.position = new Vector2(-11.0f, Random.Range(1.91f, 4.58f));
+        obj.transform.position = new Vector3(-11.0f, Random.Range(1.91f, 4.58f),1);
     }
 
     // Update is called once per frame
     void Update()
     {  
-        obj.transform.position = new Vector2(obj.transform.position.x + speed, obj.transform.position.y);
+        obj.transform.position = new Vector3(obj.transform.position.x + speed * Wind.wind, obj.transform.position.y,1);
         if (obj.transform.position.x >= 10.4f)
         {
-            obj.transform.position = new Vector2(-11.0f, Random.Range(1.91f, 4.58f));
+            obj.transform.position = new Vector3(-11.0f , Random.Range(1.91f, 4.58f),1);
+        }
+        if (obj.transform.position.x <= -15)
+        {
+            obj.transform.position = new Vector3(9.0f, Random.Range(1.91f, 4.58f), 1);
         }
     }
 }

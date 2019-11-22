@@ -8,10 +8,6 @@ public class Hp : MonoBehaviour
     public GameObject HpBar;
     public GameObject HpP;
 
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -22,6 +18,8 @@ public class Hp : MonoBehaviour
             case 0:
                 Destroy(GameObject.Find("HPP (2)"));
                 SceneManager.LoadScene("GameOver");
+                Var.winner="Игрок 2 победил!";
+                Debug.Log(Var.winner);
                 break;
             case 1:
                 Destroy(GameObject.Find("HPP (1)"));
@@ -35,6 +33,8 @@ public class Hp : MonoBehaviour
             case 0:
                 Destroy(GameObject.Find("HPP (5)"));
                 SceneManager.LoadScene("GameOver");
+                Var.winner = "Игрок 1 победил!";
+                Debug.Log(Var.winner);
                 break;
             case 1:
                 Destroy(GameObject.Find("HPP (4)"));

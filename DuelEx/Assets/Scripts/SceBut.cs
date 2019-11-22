@@ -19,6 +19,7 @@ public class SceBut : MonoBehaviour
                 Var.mode = 2;
                 break;
         }
+        Debug.Log(Var.mode);        
         SceneManager.LoadScene(level);
     }
     public void ManageScene(string level)

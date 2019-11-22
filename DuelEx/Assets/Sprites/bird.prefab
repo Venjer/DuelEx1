@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: {fileID: 3817427240626872920, guid: 2076c3e00936af147b1488b50053f071, type: 3}
+  ui: {fileID: 5077105525461107173, guid: 5243c77303ee141458f01bd6b7b83137, type: 3}
+  bull2: {fileID: 5330314845820988272, guid: 1465297fb9ea49e4d828148d31763987, type: 3}
 --- !u!60 &6472254466232353820
 PolygonCollider2D:
   m_ObjectHideFlags: 0
